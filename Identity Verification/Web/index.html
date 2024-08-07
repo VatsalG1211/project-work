@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Verification</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="bg-black text-white">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="glass p-10 max-w-md w-full">
+            <h2 class="text-2xl mb-5">Identity Verification (KYC)</h2>
+            <form id="verificationForm" class="space-y-4">
+                <div>
+                    <label for="firstName" class="block">First Name</label>
+                    <input type="text" id="firstName" class="w-full p-2 glass text-black" required>
+                </div>
+                <div>
+                    <label for="lastName" class="block">Last Name</label>
+                    <input type="text" id="lastName" class="w-full p-2 glass text-black" required>
+                </div>
+                <div>
+                    <label for="surname" class="block">Surname</label>
+                    <input type="text" id="surname" class="w-full p-2 glass text-black" required>
+                </div>
+                <div>
+                    <label for="panNumber" class="block">PAN Number</label>
+                    <input type="text" id="panNumber" class="w-full p-2 glass text-black" required>
+                </div>
+                <div>
+                    <label for="imageUpload" class="block">Upload Image</label>
+                    <input type="file" id="imageUpload" accept="image/*" class="w-full p-2 glass text-black" capture="environment" required>
+
+                    <p class="text-red-500 text-sm mt-1">* Image size should be 880 x 495.</p>
+                </div>
+                <button type="submit" class="w-full p-2 glass text-black font-bold">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <p id="resultMessage"></p>
+            <button onclick="closeModal()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
