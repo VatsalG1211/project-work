@@ -10,3 +10,7 @@ so 2 cropped images's text are extracted and stored in list.
 then on frontend input parameter,this parameter go in backend and checking that whether it matched with uploaded document and input parameter.
 
 here we have used this technology for reference because we can't have gov. api access of document verifying for Just Personal Project.
+
+![image](https://github.com/user-attachments/assets/5ea3f98b-894c-47cb-8519-474b61bd8931)
+
+![image](https://github.com/user-attachments/assets/3f69cb2b-bc3d-4498-bfaf-d1642b85ee0b)
